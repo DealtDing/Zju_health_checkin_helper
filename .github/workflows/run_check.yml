@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       # 保证同步更新
       - name: Sync with upstream
-        # 不是目标仓库则为fork的仓库, 且有设置 ${{ secrets.GITHUB_TOKEN }}
+        # 不是目标仓库则为fork的仓库, 且有设置 ${{ secrets.TOKEN }}
         if: ${{ github.repository != 'Freedomisgood/Zju_health_checkin_helper' }} 
         continue-on-error: true
         # 或者使用 uses: repo-sync/github-sync@v2
