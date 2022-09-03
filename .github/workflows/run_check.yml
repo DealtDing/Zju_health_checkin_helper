@@ -32,7 +32,7 @@ jobs:
           # 本地要保持同步的目标分支
           target_sync_branch: main
           # 本地要保持同步的目标仓库token, 即当前仓库
-          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+          target_repo_token: ${{ secrets.TOKEN }}
           upstream_pull_args: "-s recursive -Xtheirs"
 
       - name: "Set python"
